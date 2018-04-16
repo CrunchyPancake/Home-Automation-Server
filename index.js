@@ -1,6 +1,6 @@
 var express = require('express')
 var app = express()
-var ambilux = require("ambilux")
+var screenshot = require('desktop-screenshot');
 
 // LIFX Configuration
 var LifxClient = require('node-lifx').Client;
@@ -32,6 +32,15 @@ app.get('/lamp-toggle', function (req, res) {
 })
 
 app.get('/fade-up', function (req, res) {
+  // for (var i = 0; i < 10; i++) {
+  //   screenshot("screenshot" + i + ".png", function (error, complete) {
+  //     if (error)
+  //       console.log("Screenshot failed", error);
+  //     else
+  //       console.log("Screenshot succeeded");
+  //   });
+  // }
+
   fade((color) => {
     if (color.brightness > 95) {
       bulb.color(color.hue, color.saturation, 100)
@@ -78,4 +87,4 @@ var fade = function (cb) {
   }
 }
 
-app.listen(80)
+app.listen(8080)

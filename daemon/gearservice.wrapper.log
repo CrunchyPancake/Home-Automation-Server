@@ -30,3 +30,7 @@
 2018-04-16 21:54:04 - Send SIGINT 13196
 2018-04-16 21:54:04 - SIGINT to 13196 failed - Killing as fallback
 2018-04-16 21:54:04 - Finished gearservice.exe
+2018-04-16 22:06:02 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "GearService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-16 22:06:02 - Started 9064
+2018-04-16 22:41:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "GearService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-16 22:41:48 - Started 9224
