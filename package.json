@@ -1,0 +1,35 @@
+{
+  "name": "Projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "audio-play": "^2.2.0",
+    "bluebird": "^3.5.1",
+    "child_process": "^1.0.2",
+    "circular-list": "0.0.2",
+    "express": "^4.16.3",
+    "keyboardjs": "^2.4.1",
+    "lifx": "^0.3.1",
+    "loudness": "^0.2.2",
+    "node-cmd": "^3.0.0",
+    "node-gyp": "^3.6.2",
+    "node-lifx": "^0.8.0",
+    "node-media-controller": "0.0.6",
+    "node-run-cmd": "^1.0.1",
+    "nodemon": "^1.17.3",
+    "prebuild-install": "^2.5.1",
+    "robot-js": "^2.0.0",
+    "shelljs": "^0.8.1",
+    "system-control": "0.0.5"
+  },
+  "devDependencies": {
+    "node-key-sender": "^1.0.10"
+  }
+}

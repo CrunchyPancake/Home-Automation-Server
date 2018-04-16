@@ -1,0 +1,5 @@
+npm install -g qckwinsvc
+
+--->
+
+Run "qckwinsvc" in cmd
