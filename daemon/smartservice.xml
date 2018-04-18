@@ -1,7 +1,7 @@
 <service>
-	<id>gearservice.exe</id>
-	<name>GearService</name>
-	<description>For Tasker and Gear S3</description>
+	<id>smartservice.exe</id>
+	<name>SmartService</name>
+	<description>Smart Stuff</description>
 	<executable>C:\Program Files\nodejs\node.exe</executable>
 	<logmode>rotate</logmode>
 	<argument>--harmony</argument>
@@ -9,7 +9,7 @@
 	<argument>--file</argument>
 	<argument>C:\Users\John\Projects\index.js</argument>
 	<argument>--log</argument>
-	<argument>GearService wrapper</argument>
+	<argument>SmartService wrapper</argument>
 	<argument>--grow</argument>
 	<argument>0.25</argument>
 	<argument>--wait</argument>
@@ -21,5 +21,5 @@
 	<argument>--stopparentfirst</argument>
 	<argument>undefined</argument>
 	<stoptimeout>30sec</stoptimeout>
-	<workingdirectory>C:\Users\John</workingdirectory>
+	<workingdirectory>C:\Users\John\Projects</workingdirectory>
 </service>
