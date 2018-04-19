@@ -48,3 +48,69 @@
 2018-04-17 21:20:19 - Send SIGINT 9924
 2018-04-17 21:20:19 - SIGINT to 9924 failed - Killing as fallback
 2018-04-17 21:20:19 - Finished smartservice.exe
+2018-04-18 13:26:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-18 13:26:28 - Started 9476
+2018-04-18 14:23:37 - Stopping smartservice.exe
+2018-04-18 14:23:37 - ProcessKill 9476
+2018-04-18 14:23:37 - Found child process: 11076 Name: conhost.exe
+2018-04-18 14:23:37 - Found child process: 1088 Name: node.exe
+2018-04-18 14:23:37 - Stopping process 11076
+2018-04-18 14:23:37 - Send SIGINT 11076
+2018-04-18 14:23:37 - SIGINT to 11076 failed - Killing as fallback
+2018-04-18 14:23:37 - Stopping process 1088
+2018-04-18 14:23:37 - Send SIGINT 1088
+2018-04-18 14:23:37 - SIGINT to 1088 failed - Killing as fallback
+2018-04-18 14:23:38 - Stopping process 9476
+2018-04-18 14:23:38 - Send SIGINT 9476
+2018-04-18 14:23:38 - SIGINT to 9476 failed - Killing as fallback
+2018-04-18 14:23:38 - Finished smartservice.exe
+2018-04-18 19:41:51 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-18 19:41:51 - Started 8524
+2018-04-18 20:45:49 - Stopping smartservice.exe
+2018-04-18 20:45:49 - ProcessKill 8524
+2018-04-18 20:45:49 - Found child process: 10028 Name: conhost.exe
+2018-04-18 20:45:49 - Found child process: 5412 Name: node.exe
+2018-04-18 20:45:49 - Stopping process 10028
+2018-04-18 20:45:49 - Send SIGINT 10028
+2018-04-18 20:45:49 - SIGINT to 10028 failed - Killing as fallback
+2018-04-18 20:45:49 - Stopping process 5412
+2018-04-18 20:45:49 - Send SIGINT 5412
+2018-04-18 20:45:49 - SIGINT to 5412 failed - Killing as fallback
+2018-04-18 20:45:49 - Stopping process 8524
+2018-04-18 20:45:49 - Send SIGINT 8524
+2018-04-18 20:45:49 - SIGINT to 8524 failed - Killing as fallback
+2018-04-18 20:45:49 - Finished smartservice.exe
+2018-04-18 21:57:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-18 21:57:22 - Started 2856
+2018-04-19 11:19:06 - Stopping smartservice.exe
+2018-04-19 11:19:06 - ProcessKill 2856
+2018-04-19 11:19:06 - Found child process: 10948 Name: conhost.exe
+2018-04-19 11:19:06 - Found child process: 5424 Name: node.exe
+2018-04-19 11:19:06 - Stopping process 10948
+2018-04-19 11:19:06 - Send SIGINT 10948
+2018-04-19 11:19:06 - SIGINT to 10948 failed - Killing as fallback
+2018-04-19 11:19:06 - Stopping process 5424
+2018-04-19 11:19:06 - Send SIGINT 5424
+2018-04-19 11:19:06 - SIGINT to 5424 failed - Killing as fallback
+2018-04-19 11:19:06 - Stopping process 2856
+2018-04-19 11:19:06 - Send SIGINT 2856
+2018-04-19 11:19:06 - SIGINT to 2856 failed - Killing as fallback
+2018-04-19 11:19:06 - Finished smartservice.exe
+2018-04-19 14:58:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-19 14:58:53 - Started 9160
+2018-04-19 23:30:05 - Stopping smartservice.exe
+2018-04-19 23:30:05 - ProcessKill 9160
+2018-04-19 23:30:05 - Found child process: 216 Name: conhost.exe
+2018-04-19 23:30:05 - Found child process: 9564 Name: node.exe
+2018-04-19 23:30:05 - Stopping process 216
+2018-04-19 23:30:05 - Send SIGINT 216
+2018-04-19 23:30:05 - SIGINT to 216 failed - Killing as fallback
+2018-04-19 23:30:05 - Stopping process 9564
+2018-04-19 23:30:05 - Send SIGINT 9564
+2018-04-19 23:30:05 - SIGINT to 9564 failed - Killing as fallback
+2018-04-19 23:30:05 - Stopping process 9160
+2018-04-19 23:30:05 - Send SIGINT 9160
+2018-04-19 23:30:05 - SIGINT to 9160 failed - Killing as fallback
+2018-04-19 23:30:05 - Finished smartservice.exe
+2018-04-20 00:26:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-04-20 00:26:36 - Started 13592

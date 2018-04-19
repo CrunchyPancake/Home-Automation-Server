@@ -1,43 +1,45 @@
 var express = require('express')
 var app = express()
+
+// Dependencies
 var screenshot = require('desktop-screenshot');
 const average = require("image-average-color")
+var color = require('dominant-color')
+
 // LIFX Configuration
 var LifxClient = require('node-lifx').Client;
 var client = new LifxClient();
-var bulb
 client.on('light-new', function (light) {
   console.log("found light")
   bulb = light;
 });
 client.init();
 
+// Global Variables
+var bulb
+var prevCo lors = [0, 0, 0, 0]
+var savedColor = { hue: 193, saturation: 100, brightness: 48, kelvin: 3500 }
 
-var prevColors = [0, 0, 0, 0]
-
-// setInterval(() => {
-//   screenshot("screenshot.png", function (error, complete) {
-//     average("./screenshot.png", (err, color) => {
-//       if (err) throw err;
-
-//       if (prevColors[0] - color[0] < -20 || prevColors[0] - color[0] > 20 ||
-//         prevColors[1] - color[1] < -20 || prevColors[1] - color[1] > 20 ||
-//         prevColors[2] - color[2] < -20 || prevColors[2] - color[2] > 20) {
-//         prevColors = color
-//         var colors = {
-//           "red": color[0],
-//           "green": color[1],
-//           "blue": color[2],
-//           "hue": color[3]
-//         }
-//         changeColor(colors)
-//       }
-
-//     })
-//   })
-// }, 200)
-
-var blueColor = { hue: 193, saturation: 100, brightness: 48, kelvin: 3500 }
+// Ambient Light Testing
+setInterval(() => {
+  screenshot("screenshot.png", function (error, complete) {
+    color("screenshot.png", { format: 'rgb' }, (err, color) => {
+      try {
+        if (difference(prevColors[0], color[0]) + difference(prevColors[1], color[1]) + difference(prevColors[2], color[2]) > 35) {
+          prevColors = color
+          changeColor({
+            "red": parseInt(color[0]),
+            "green": parseInt(color[1]),
+            "blue": parseInt(color[2]),
+            "hue": parseInt(color[3])
+          })
+        }
+      } catch (err) {
+        return;
+      }
+    })
+  })
+}, 150)
 
 app.get('/lamp-toggle', function (req, res) {
   bulb.getPower((error, power) => {
@@ -51,14 +53,16 @@ app.get('/lamp-toggle', function (req, res) {
   })
 })
 
-app.get('/set-color', function(req, res) {
-  bulb.color(blueColor.hue, blueColor.saturation, blueColor.brightness, blueColor.kelvin, 200)
-  res.send("done")
+app.get('/set-color', function (req, res) {
+  bulb.getState((err, data) => {
+    bulb.color(savedColor.hue, savedColor.saturation, data.color.brightness, savedColor.kelvin, 200)
+    res.send("done")
+  })
 })
 
-app.get('/get-color', function(req, res) {
+app.get('/get-color', function (req, res) {
   bulb.getState((err, data) => {
-    blueColor = data.color; 
+    savedColor = data.color;
     res.send("result: " + data)
   })
 })
@@ -102,13 +106,11 @@ var fade = function (cb) {
 }
 
 var changeColor = function (color) {
-  bulb.getPower((error, power) => {
-    if (power == 1) {
-      color.red = color.red * 0.85;
-      bulb.colorRgb(color.red, color.green, color.blue, duration = 300)
-      return;
-    }
-  })
+  return bulb.colorRgb(color.red, color.green, color.blue, duration = 300)
+}
+
+var difference = function (a, b) {
+  return Math.abs(a - b);
 }
 
 app.listen(80)
