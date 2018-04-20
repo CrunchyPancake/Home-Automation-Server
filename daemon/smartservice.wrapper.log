@@ -114,3 +114,17 @@
 2018-04-19 23:30:05 - Finished smartservice.exe
 2018-04-20 00:26:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\John\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\John\Projects\index.js --log "SmartService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2018-04-20 00:26:36 - Started 13592
+2018-04-20 18:43:39 - Stopping smartservice.exe
+2018-04-20 18:43:39 - ProcessKill 13592
+2018-04-20 18:43:39 - Found child process: 2248 Name: conhost.exe
+2018-04-20 18:43:39 - Found child process: 12476 Name: node.exe
+2018-04-20 18:43:39 - Stopping process 2248
+2018-04-20 18:43:39 - Send SIGINT 2248
+2018-04-20 18:43:39 - SIGINT to 2248 failed - Killing as fallback
+2018-04-20 18:43:39 - Stopping process 12476
+2018-04-20 18:43:39 - Send SIGINT 12476
+2018-04-20 18:43:39 - SIGINT to 12476 failed - Killing as fallback
+2018-04-20 18:43:39 - Stopping process 13592
+2018-04-20 18:43:39 - Send SIGINT 13592
+2018-04-20 18:43:39 - SIGINT to 13592 failed - Killing as fallback
+2018-04-20 18:43:39 - Finished smartservice.exe

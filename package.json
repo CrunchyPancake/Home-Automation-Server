@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ambilight-provider": "^1.1.1",
     "audio-play": "^2.2.0",
     "bluebird": "^3.5.1",
     "child_process": "^1.0.2",
